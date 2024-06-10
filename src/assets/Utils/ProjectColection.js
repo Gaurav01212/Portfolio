@@ -14,7 +14,7 @@ export const projectData=[{
 {
     title:"Ecommerce App",
     img:`${Ecommerce}`,
-    url:"https://gaurav01212.github.io/Ecommerce-Frontend/"
+    url:"https://gaurav01212.github.io/EcommerceFrontend/"
 },
 {
     title:"Music App",

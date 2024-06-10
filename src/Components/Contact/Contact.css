@@ -32,7 +32,8 @@
 }
 
 .left{
-    width:50%;
+    min-width:50%;
+    max-width:50%;
     display:flex;
     align-items:flex-start;
     flex-direction:column;
@@ -59,15 +60,20 @@
 }
 
 .right{
-    width:50%;
+    min-width:50%;
+    max-width:50%;
     display:flex;
-    align-items:flex-start;
+    align-items:center;
     flex-direction:column;
     gap:10px;
-    margin-left:20px;
+    
     padding-top:30px;
+    background:#595753;
+    padding:10px;
+    border-radius:10px;
 }
 .right input{
+   
     width:80%;
     padding:10px;
     background:#c9beab;
@@ -75,6 +81,12 @@
     border:none;
     font-size:0.9rem;
     border-radius:5px;
+    outline:none;
+}
+.right label{
+    margin-top:10px;
+    align-self:flex-start;
+    margin-left:9%;
 }
 
 .right textarea{
@@ -86,15 +98,24 @@
     color:#32323c;
     font-size:1rem;
     border-radius:5px;
+    max-width:80%;
+    min-width:50%;
+
+    align-self:flex-start;
+    margin-left:9%;
+
+    min-height:40%;
+    outline:none;
+    
 }
 
 .submit{
-    padding:13px;
+    padding:10PX 15PX;
     border:none;
     border-radius:6px;
     margin-top:10px;
     
-    font-size:.9rem;
+    font-size:.8rem;
    
     background:#c9beab;
     color:#32323c;

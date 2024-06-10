@@ -4,7 +4,7 @@ import './Project.css'
 
 function Project({title,img,url}) {
   return (
-    <div className='main-container'>
+    <div id='projects' className='main-container'>
         <div className='container'>
         <img src={img} alt="" />
         <div className='pop-up'>

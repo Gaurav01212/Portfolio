@@ -1,40 +1,36 @@
-
-.container{
-    height:200px;
-    width:300px;
-    /* border:2px solid black; */
-    border-radius:10px;
-    transition:all 1s;
-   
-    
-    
+.main-container {
+    flex: 1 1 300px; 
+    display: flex;
+    justify-content: center;
 }
 
-
-
-.container img{
-    height:200px;
-    width:300px;
-    position:absolute;
-    z-index:-1;
-    border-radius:5px;
-    
-   
+.container {
+    height: 200px;
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 10px;
+    transition: all 1s;
+    position: relative;
 }
 
-.pop-up{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    height:200px;
-    width:300px;
-    border-radius:10px;
-    position:absolute;
+.container img {
+    height: 100%; 
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+}
 
-    display:none;
-
-    transition:all 2s;
-    
+.pop-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; 
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    transition: all 2s;
 }
 
 .pop-up h2 {
@@ -45,30 +41,70 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight:900;
+    font-weight: 900;
+}
+
+.pop-up .logo {
+    font-size: 1.2rem;
+    padding: 14px;
+    align-self: flex-end;
+    color: green;
+}
+
+.container:hover img {
+    opacity: 0.28;
+}
+
+.container:hover .pop-up {
+    display: flex;
+}
+
+.container:hover {
+    transform: scale(1.05);
 }
 
 
-.pop-up .logo{
-    font-size:1.2rem;
-    padding:14px;
-    align-self:flex-end;
-    color:green;
-    
+@media (max-width: 768px) {
+    .container {
+        height: 180px;
+        max-width: 270px; 
+    }
+
+    .container img, .pop-up {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pop-up h2 {
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+    .pop-up .logo {
+        font-size: 1rem;
+        padding: 12px;
+    }
 }
 
-.container:hover img{
-    opacity:0.28;
+
+@media (max-width: 480px) {
+    .container {
+        height: 150px;
+        max-width: 240px; 
+    }
+
+    .container img, .pop-up {
+        height: 100%;
+        width: 100%;
+    }
+
+    .pop-up h2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .pop-up .logo {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
-
-.container:hover .pop-up{
-    display:flex;
-    
-}
-
-.container:hover{
-    transform:scale(1.05);
-    
-}
-
-
