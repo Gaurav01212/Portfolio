@@ -31,7 +31,7 @@ function About() {
           <div className="about-skills">
             <div className="skill">
               <p>Html5 | css3</p>
-              <hr style={{ width: "60%" }} />
+              <hr style={{ width: "23%" }} />
             </div>
             <div className="skill">
               <p>Javascript</p>

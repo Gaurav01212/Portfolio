@@ -26,9 +26,9 @@
 }
 
 .left-part img {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
-    border: 2px solid green;
+   border-radius:20px;
     margin: 0 20px;
 }
 
