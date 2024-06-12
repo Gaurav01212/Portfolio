@@ -36,7 +36,8 @@ function Navbar() {
         
        </ul>
 
-        <div className='nav-con'>Contact Me</div>
+        
+        <AnchorLink className='anchor-link' offset={50} href='#contacts'><li className='nav-con'>Contact Me</li></AnchorLink>
       </div>
       
       
